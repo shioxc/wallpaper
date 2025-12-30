@@ -20,20 +20,16 @@ export function request(config={})
 			data,
 			method,
 			success: res =>{
-				console.log(res.data);
 				if(Number(res.data.errCode) === 0)
 				{
-					console.log(1);
 					resolve(res.data);
 				}
 				else
 				{
-					console.log(2);
 					reject(res.data);
 				}
 			},
 			fail: err=>{
-				console.log(2);
 				reject(err.data);
 			}
 		})

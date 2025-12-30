@@ -36,7 +36,7 @@ export function apiGetSetupScore(data={})
 export function apiWriteDownload(data={})
 {
 	return request({
-		url:"/downlaodWall",
+		url:"/downloadWall",
 		data
 	})
 }
